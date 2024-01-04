@@ -1,0 +1,26 @@
+{
+  "name": "pkg-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "bin": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node app.js",
+    "build": "pkg ."
+  },
+  "pkg": {
+    "targets": ["node18-win-x64"],
+    "outputPath": "dist",
+    "options": ["experimental-modules"],
+    "scripts": ["app.js"],
+    "assets": ["assets/**/*"]
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^3.3.0",
+    "pkg": "^5.8.1",
+    "yaml": "^2.3.4"
+  }
+}
