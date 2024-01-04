@@ -3,7 +3,6 @@ const { parse } = require('yaml');
 const fs = require('fs');
 const path = require('path');
 (async () => {
-    console.log(process.pkg);
     function convertOptions(options) {
         const { label, value, description } = options;
         return { name: label, value, description: description || label };
